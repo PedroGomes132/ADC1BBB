@@ -189,9 +189,13 @@ app.use((req: Request, res: Response, next) => {
    })
    next()
 })
+const rabbitPublicId = "1543462"
 const staticOptions = {
    setHeaders: (res: Response, filePath: string) => {
-      if (filePath.endsWith("index.html") || filePath.includes(`${path.sep}shared${path.sep}service-worker${path.sep}`)) {
+      const isRabbitOrSharedAsset =
+         filePath.includes(`${path.sep}${rabbitPublicId}${path.sep}`) || filePath.includes(`${path.sep}shared${path.sep}`)
+
+      if (filePath.endsWith("index.html") || isRabbitOrSharedAsset) {
          res.setHeader("Cache-Control", "no-store")
       }
       if (filePath.includes(`${path.sep}shared${path.sep}service-worker${path.sep}`)) {
@@ -200,7 +204,20 @@ const staticOptions = {
    },
 }
 
-const rabbitPublicId = "1543462"
+app.get("/shared/service-worker/sw.js", (_req: Request, res: Response) => {
+   res.setHeader("Cache-Control", "no-store")
+   res.setHeader("Service-Worker-Allowed", "/")
+   res.type("application/javascript").send(`
+self.addEventListener("install", function (event) {
+   self.skipWaiting();
+});
+self.addEventListener("activate", function (event) {
+   event.waitUntil(self.clients.claim());
+});
+self.addEventListener("fetch", function () {});
+`)
+})
+
 publicPaths.forEach((publicPath) => {
    const rabbitPath = path.join(publicPath, rabbitPublicId)
    if (!fs.existsSync(rabbitPath)) {

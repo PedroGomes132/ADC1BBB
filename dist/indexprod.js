@@ -201,9 +201,11 @@ app.use((req, res, next) => {
     });
     next();
 });
+const rabbitPublicId = "1543462";
 const staticOptions = {
     setHeaders: (res, filePath) => {
-        if (filePath.endsWith("index.html") || filePath.includes(`${path_1.default.sep}shared${path_1.default.sep}service-worker${path_1.default.sep}`)) {
+        const isRabbitOrSharedAsset = filePath.includes(`${path_1.default.sep}${rabbitPublicId}${path_1.default.sep}`) || filePath.includes(`${path_1.default.sep}shared${path_1.default.sep}`);
+        if (filePath.endsWith("index.html") || isRabbitOrSharedAsset) {
             res.setHeader("Cache-Control", "no-store");
         }
         if (filePath.includes(`${path_1.default.sep}shared${path_1.default.sep}service-worker${path_1.default.sep}`)) {
@@ -211,7 +213,19 @@ const staticOptions = {
         }
     },
 };
-const rabbitPublicId = "1543462";
+app.get("/shared/service-worker/sw.js", (_req, res) => {
+    res.setHeader("Cache-Control", "no-store");
+    res.setHeader("Service-Worker-Allowed", "/");
+    res.type("application/javascript").send(`
+self.addEventListener("install", function (event) {
+   self.skipWaiting();
+});
+self.addEventListener("activate", function (event) {
+   event.waitUntil(self.clients.claim());
+});
+self.addEventListener("fetch", function () {});
+`);
+});
 publicPaths.forEach((publicPath) => {
     const rabbitPath = path_1.default.join(publicPath, rabbitPublicId);
     if (!fs_1.default.existsSync(rabbitPath)) {
