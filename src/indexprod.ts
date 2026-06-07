@@ -200,6 +200,31 @@ const staticOptions = {
    },
 }
 
+const rabbitPublicId = "1543462"
+publicPaths.forEach((publicPath) => {
+   const rabbitPath = path.join(publicPath, rabbitPublicId)
+   if (!fs.existsSync(rabbitPath)) {
+      return
+   }
+
+   app.use((req: Request, res: Response, next) => {
+      if (req.method !== "GET" && req.method !== "HEAD") {
+         return next()
+      }
+
+      const requestedPath = decodeURIComponent(req.path)
+      const normalizedPath = path.normalize(requestedPath).replace(/^(\.\.(\/|\\|$))+/, "")
+      const fallbackPath = path.join(rabbitPath, normalizedPath)
+
+      if (!fallbackPath.startsWith(rabbitPath) || !fs.existsSync(fallbackPath) || fs.statSync(fallbackPath).isDirectory()) {
+         return next()
+      }
+
+      logger.debug({ event: "static.rabbit_fallback", url: req.originalUrl, filePath: fallbackPath }, "Fallback Rabbit servindo arquivo")
+      res.sendFile(fallbackPath)
+   })
+})
+
 publicPaths.forEach((publicPath) => {
    logger.info({ event: "static.public_path", publicPath }, "Public path habilitado")
    app.use("/", express.static(publicPath, staticOptions))
