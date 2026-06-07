@@ -4,7 +4,7 @@ System.register([], function (exports) {
     execute: function () {
       exports("_$meta", {
         name: "fa732ea0bd",
-        version: "0.0.0-local",
+        version: "7.4.0-rc.1",
         alias: "local-optional-shared-stub"
       });
       exports("default", {});
