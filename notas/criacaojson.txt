@@ -1,0 +1,6 @@
+CREATE TABLE `jogo` (
+ `id` int(11) NOT NULL,
+ `json` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT 'spininicial',
+ PRIMARY KEY (`id`) USING BTREE,
+ KEY `id` (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci

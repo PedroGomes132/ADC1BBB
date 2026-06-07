@@ -1,0 +1,16 @@
+{
+    "CommonRulesShared": {
+        "InGameCurrency": "A moeda do jogo é %{configuredValue}.",
+        "CashWallet": "A \"Carteira de dinheiro\" apresenta o dinheiro disponível para apostar.",
+        "WinShownInCash": "Todos os ganhos são apresentados em dinheiro.",
+        "BackAction": "Toque para sair do jogo e voltar à página anterior.",
+        "GameLobbyAction": "Prima para sair do jogo e ir para o Lobby do Jogo PG.",
+        "GameHistoryDescription": "Mostra os detalhes dos jogos anteriores. Desliza até ao fim da página para carregar mais registos.",
+        "GameHistoryActionWithIcon": "Toque em<img src='ic_nav_calender'/>para selecionar as datas dos jogos a apresentar no Histórico.",
+        "ReturnToPlayerDescription": "O retorno teórico para o jogador (RTP) deste jogo é de %{rtpValue}. Este RTP representa o retorno teórico do jogo a longo prazo.",
+        "AdditionInfoMalfunctionDescription": "O mau funcionamento anula todos os pagamentos e jogadas.",
+        "AdditionInfoInactiveGameSessions": "O jogo regressará automaticamente à sua fase inicial após estar inativo durante: %{dayCount} dias. O progresso e o estado de quaisquer jogos de recolha, jogos grátis não acabados, jogos extra não acabados, etc. já não será mantido.",
+        "AdditionInfoInactiveGameSessionsHour": "O jogo regressará automaticamente à sua fase inicial após estar inativo durante: %{hourCount} horas. O progresso e o estado de quaisquer jogos de recolha, jogos grátis não acabados, jogos extra não acabados, etc. já não será mantido.",
+        "AdditionInfoDisputeHistoryDescription": "Em caso de disputas sobre os resultados do jogo, todos os resultados do jogo mostrados na página do histórico do jogo são absolutos e finais."
+    }
+}

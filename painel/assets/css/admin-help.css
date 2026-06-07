@@ -1,0 +1,56 @@
+.page-help {
+  color: #697a8d;
+  font-size: 0.95rem;
+  margin: 0.25rem 0 0;
+}
+
+.admin-note {
+  background: #f8f9fb;
+  border: 1px solid #e7e7ff;
+  border-left: 4px solid #696cff;
+  border-radius: 6px;
+  color: #566a7f;
+  margin-bottom: 1rem;
+  padding: 0.9rem 1rem;
+}
+
+.admin-note strong {
+  color: #233446;
+}
+
+.field-help {
+  color: #8592a3;
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  margin-top: 0.25rem;
+}
+
+.table-help {
+  color: #8592a3;
+  font-size: 0.8rem;
+  white-space: normal;
+}
+
+.code-cell {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.panel-kpi {
+  border: 1px solid #e7e7ff;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.panel-kpi .label {
+  color: #8592a3;
+  font-size: 0.8rem;
+}
+
+.panel-kpi .value {
+  color: #233446;
+  font-size: 1.35rem;
+  font-weight: 600;
+}

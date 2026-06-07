@@ -1,0 +1,63 @@
+{
+    "SlotRulesShared": {
+        "BetSize": "A aposta é definida com o seletor \"Aposta\".",
+        "BetLevel": "O nível da aposta é definido com o seletor \"Nível de aposta\".",
+        "BetAmount": "O valor da aposta é definido com o seletor \"Valor de aposta\".",
+        "AutoSpinPlays": "A \"Rodada automática\" joga automaticamente durante o número de rodadas selecionado.",
+        "PayoutAccordingToPaytable": "As combinações e pagamentos vencedores são feitos de acordo com a \"Tabela de pagamentos\".",
+        "MainGameTitle": "Jogo principal",
+        "SpinTitle": "Rodar",
+        "FastStopAction": "Toque no botão ou na área de jogo durante uma rodada para parar os cilindros.",
+        "HoldSpaceBarAction": "Mantenha premida a tecla <Barra de espaço> para continuar a rodar até soltar a tecla. (apenas aplicável à versão de PC)",
+        "StopTitle": "Parar",
+        "StopAutoSpinAction": "Toque para parar a Rodada automática. O número no botão indica o número restante de rodadas da Rodada automática.",
+        "SpinOptionTitle": "Opções de rodada",
+        "SpinSpeedSelection": "A Velocidade da rodada pode ser definida para Normal ou Turbo (duração da rodada dos cilindros no jogo principal reduzida).",
+        "AutoSpinPlayDescription": "A Rodada automática joga automaticamente durante o número de rodadas selecionado.",
+        "SelectAutoSpinRound": "Número de rodadas: Toque para selecionar o número de Rodadas automáticas.",
+        "StopAutoSpinIfWinExceed": "Parar Rodada automática se um único prémio exceder (valor especificado pelo jogador): A Rodada automática é automaticamente desativada quando um único prémio excede este valor.",
+        "StopAutoSpinIfBalanceIncrease": "Parar Rodada automática se o saldo aumentar (valor especificado pelo jogador): A Rodada automática é desativada automaticamente quando o saldo aumenta este valor (relativamente ao saldo existente ao iniciar a Rodada automática).",
+        "StopAutoSpinIfBalanceDecrease": "Parar Rodada automática se o saldo diminuir (valor especificado pelo jogador): A Rodada automática é desativada automaticamente quando o saldo diminui este valor (relativamente ao saldo existente ao iniciar a Rodada automática).",
+        "BetOptionsTitle": "Opções de aposta",
+        "BetSizeAction": "Aposta: Deslize para selecionar a Aposta.",
+        "BetLevelAction": "Nível de aposta: Deslize para selecionar o Nível de aposta.",
+        "BetAmountAction": "Valor de aposta: Deslize para selecionar o Valor de aposta.",
+        "MaxBetAction": "Aposta máxima: Toque para definir a Aposta e o Nível de aposta para os valores máximos.",
+        "MoreTitle": "Mais",
+        "MoreAction": "Prima para aceder a Som, Tabela de Pagamentos, Regras do Jogo e Histórico do Jogo.",
+        "MoreSettingTitle": "Mais definições",
+        "SoundTitle": "Som",
+        "SoundAction": "Toque para ATIVAR ou DESATIVAR o som.",
+        "PaytableTitle": "Tabela de pagamentos",
+        "PaytableAction": "Mostra as combinações vencedoras e a tabela de pagamentos.",
+        "GameRuleTitle": "Regras",
+        "GameRuleAction": "Mostra as regras do jogo e as funções dos botões.",
+        "GameHistoryTitle": "Histórico",
+        "CloseTitle": "Fechar",
+        "CloseAction": "Toque para voltar ao Jogo principal.",
+        "ReturnToPlayerTitle": "Retorno para o Jogador",
+        "AdditionInfoTitle": "Informação adicional",
+        "TurboSpinTitle": "Rodada Turbo",
+        "TurboSpinAction": "Toque para LIGAR ou DESLIGAR a Rodada Turbo.",
+        "BackTitle": "Voltar"
+    },
+    "SlotRulesBetLineRelated": {
+        "WinDetailBreakdown": "O ganho de linha de aposta em dinheiro é igual ao valor apresentado na \"Tabela de pagamentos\", multiplicado pela aposta e pelo nível de aposta.",
+        "HighestWinIsPaid": "Apenas é pago o maior ganho por linha de aposta.",
+        "WinFromLeftmost": "Ganha com as linhas de aposta, se os símbolos vencedores se sucederem a partir do cilindro mais à esquerda.",
+        "SimultanuousWin": "São adicionados os ganhos simultâneos em diferentes linhas de aposta.",
+        "SpinAction": "Toque para começar a rodar com as definições atuais de Linhas de aposta, Valor da aposta e Nível de aposta.",
+        "PressSpaceAction": "Prima a tecla <Barra de espaço> para começar a rodar com as definições atuais de Linhas de aposta, Valor da aposta e Nível de aposta. (apenas aplicável à versão de PC)"
+    },
+    "SlotRulesBetWaysRelated": {
+        "WinDetailBreakdown": "O ganho de sentido de aposta em dinheiro é igual ao valor apresentado na \"Tabela de pagamentos\", multiplicado pela aposta e pelo nível de aposta.",
+        "BetWaysWin": "Ganha com os sentidos de aposta, se os símbolos vencedores se sucederem a partir do cilindro mais à esquerda.",
+        "TotalOfBetWaysWin": "O número total de sentidos de aposta vencedores para cada símbolo é calculado multiplicando o número de símbolos vencedores adjacentes em cada símbolo a partir do símbolo mais à esquerda para a direita.",
+        "WinningSymbolPayout": "O prémio do símbolo vencedor é multiplicado pelo número de sentidos da aposta vencedora.",
+        "SimultaneousWin": "São adicionados os ganhos simultâneos em diferentes sentidos de aposta."
+    },
+    "SlotRulesBaseBetRelated": {
+        "SpinAction": "Toque para começar a rodar com as definições atuais de Aposta de base, Valor da aposta e Nível de aposta.",
+        "PressSpaceAction": "Prima a tecla <Barra de espaço> para começar a rodar com as definições atuais de Aposta base, Valor da aposta e Nível de aposta. (apenas aplicável à versão de PC)"
+    }
+}

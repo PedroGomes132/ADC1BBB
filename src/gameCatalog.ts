@@ -1,0 +1,41 @@
+export type GameCatalogItem = {
+   code: string
+   id: number
+   name: string
+}
+
+export const gameCatalog: GameCatalogItem[] = [
+   { code: "fortune-tiger", id: 126, name: "Fortune Tiger" },
+   { code: "fortune-ox", id: 98, name: "Fortune Ox" },
+   { code: "fortune-dragon", id: 1695365, name: "Fortune Dragon" },
+   { code: "fortune-rabbit", id: 1543462, name: "Fortune Rabbit" },
+   { code: "fortune-mouse", id: 68, name: "Fortune Mouse" },
+   { code: "bikini-paradise", id: 69, name: "Bikini Paradise" },
+   { code: "jungle-delight", id: 40, name: "Jungle Delight" },
+   { code: "double-fortune", id: 48, name: "Double Fortune" },
+   { code: "ganesha-gold", id: 42, name: "Ganesha Gold" },
+   { code: "dragon-tiger-luck", id: 63, name: "Dragon Tiger Luck" },
+   { code: "butterfly-blossom", id: 125, name: "Butterfly Blossom" },
+   { code: "lucky-clover", id: 1601012, name: "Lucky Clover" },
+   { code: "chicky-run", id: 1738001, name: "Chicky Run" },
+   { code: "prosper-ftree", id: 1312883, name: "Prosperity Fortune Tree" },
+   { code: "ultimate-striker", id: 1489936, name: "Ultimate Striker" },
+   { code: "ninja-raccoon", id: 1529867, name: "Ninja Raccoon" },
+   { code: "cash-mania", id: 1682240, name: "Cash Mania" },
+   { code: "wings-iguazu", id: 1747549, name: "Wings of Iguazu" },
+   { code: "piggy-gold", id: 39, name: "Piggy Gold" },
+   { code: "wild-bandito", id: 104, name: "Wild Bandito" },
+   { code: "zombie-outbreak", id: 1635221, name: "Zombie Outbreak" },
+   { code: "majestic-ts", id: 95, name: "Majestic Treasures" },
+   { code: "treasures-aztec", id: 87, name: "Treasures of Aztec" },
+   { code: "thai-river", id: 92, name: "Thai River Wonders" },
+   { code: "gdn-ice-fire", id: 91, name: "Guardians of Ice and Fire" },
+   { code: "rise-apollo", id: 101, name: "Rise of Apollo" },
+   { code: "wild-bounty-sd", id: 135, name: "Wild Bounty Showdown" },
+   { code: "three-cz-pigs", id: 1727711, name: "Three Crazy Pigs" },
+   { code: "shaolin-soccer", id: 67, name: "Shaolin Soccer" },
+]
+
+export const getGameByCode = (code: string) => gameCatalog.find((game) => game.code === code)
+
+export const getGameById = (id: string | number) => gameCatalog.find((game) => String(game.id) === String(id))

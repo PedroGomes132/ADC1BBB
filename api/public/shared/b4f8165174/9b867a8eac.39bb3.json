@@ -1,0 +1,115 @@
+{
+    "rules": [
+        {
+            "id": "MainGame",
+            "title": "SlotRulesShared.MainGameTitle",
+            "content": [
+                {
+                    "image": "btn_start",
+                    "subtitle": "SlotRulesShared.SpinTitle",
+                    "subContent": [
+                        "SlotRulesBetLineRelated.SpinAction",
+                        "SlotRulesShared.FastStopAction",
+                        "SlotRulesBetLineRelated.PressSpaceAction",
+                        "SlotRulesShared.HoldSpaceBarAction"
+                    ]
+                },
+                {
+                    "image": "btn_stop",
+                    "subtitle": "SlotRulesShared.StopTitle",
+                    "subContent": ["SlotRulesShared.StopAutoSpinAction"]
+                },
+                {
+                    "image": "icon_auto_spin_menu",
+                    "subtitle": "SlotRulesShared.SpinOptionTitle",
+                    "subContent": [
+                        "SlotRulesShared.SpinSpeedSelection",
+                        "SlotRulesShared.AutoSpinPlayDescription",
+                        "SlotRulesShared.SelectAutoSpinRound",
+                        "SlotRulesShared.StopAutoSpinIfWinExceed",
+                        "SlotRulesShared.StopAutoSpinIfBalanceIncrease",
+                        "SlotRulesShared.StopAutoSpinIfBalanceDecrease"
+                    ]
+                },
+                {
+                    "image": "icon_bet",
+                    "subtitle": "SlotRulesShared.BetOptionsTitle",
+                    "subContent": [
+                        "SlotRulesShared.BetSizeAction",
+                        "SlotRulesShared.BetLevelAction",
+                        "SlotRulesShared.BetAmountAction",
+                        "SlotRulesShared.MaxBetAction"
+                    ]
+                },
+                {
+                    "image": "ic_nav_return",
+                    "subtitle": "SlotRulesShared.BackTitle",
+                    "subContent": ["CommonRulesShared.BackAction"]
+                },
+                {
+                    "image": "icon_more_menu",
+                    "subtitle": "SlotRulesShared.MoreTitle",
+                    "subContent": ["SlotRulesShared.MoreAction"]
+                }
+            ]
+        },
+        {
+            "id": "MoreSetting",
+            "title": "SlotRulesShared.MoreSettingTitle",
+            "content": [
+                {
+                    "image": "ic_nav_sound_on",
+                    "subtitle": "SlotRulesShared.SoundTitle",
+                    "subContent": ["SlotRulesShared.SoundAction"]
+                },
+                {
+                    "image": "icon_paytable",
+                    "subtitle": "SlotRulesShared.PaytableTitle",
+                    "subContent": ["SlotRulesShared.PaytableAction"]
+                },
+                {
+                    "image": "icon_rule_book",
+                    "subtitle": "SlotRulesShared.GameRuleTitle",
+                    "subContent": ["SlotRulesShared.GameRuleAction"]
+                },
+                {
+                    "image": "icon_history",
+                    "subtitle": "SlotRulesShared.GameHistoryTitle",
+                    "subContent": [
+                        "CommonRulesShared.GameHistoryDescription",
+                        "CommonRulesShared.GameHistoryActionWithIcon"
+                    ]
+                },
+                {
+                    "image": "menu_close_button",
+                    "subtitle": "SlotRulesShared.CloseTitle",
+                    "subContent": ["SlotRulesShared.CloseAction"]
+                }
+            ]
+        },
+        {
+            "id": "RTP",
+            "bullet": false,
+            "title": "SlotRulesShared.ReturnToPlayerTitle",
+            "content": [
+                {
+                    "type": "rtp",
+                    "text": "CommonRulesShared.ReturnToPlayerDescription"
+                }
+            ]
+        },
+        {
+            "id": "AdditionalInfo",
+            "bullet": false,
+            "title": "SlotRulesShared.AdditionInfoTitle",
+            "content": [
+                { "type": "inactive" },
+                "CommonRulesShared.AdditionInfoMalfunctionDescription",
+                {
+                    "type": "non-regulated",
+                    "text": "CommonRulesShared.AdditionInfoDisputeHistoryDescription"
+                }
+            ]
+        }
+    ]
+}

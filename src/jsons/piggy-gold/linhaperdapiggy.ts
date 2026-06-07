@@ -1,0 +1,50 @@
+export default {
+   async linhaperda() {
+      const numeroAleatorio: number = Math.floor(Math.random() * 501) + 1
+
+      const jsons: any = {
+         [0]: {
+            wp: null,
+            lw: null,
+            frl: [3, 6, 2, 3, 7, 4, 5, 3, 5],
+            pc: null,
+            wm: null,
+            tnbwm: null,
+            gwt: -1,
+            ctw: 0.0,
+            pmt: null,
+            cwc: 0,
+            fstc: null,
+            pcwc: 0,
+            rwsp: null,
+            hashr: "0:6;7;3#MV#0.6#MT#1#MG#0#",
+            fb: null,
+            ml: 2,
+            cs: 0.3,
+            rl: [6, 7, 3],
+            sid: "1836962956945849856",
+            psid: "1836962956945849856",
+            st: 1,
+            nst: 1,
+            pf: 1,
+            aw: 0.0,
+            wid: 0,
+            wt: "C",
+            wk: "0_C",
+            wbn: null,
+            wfg: null,
+            blb: 100000.0,
+            blab: 99999.4,
+            bl: 99999.4,
+            tb: 0.6,
+            tbb: 0.6,
+            tw: 0.0,
+            np: -0.6,
+            ocr: null,
+            mr: null,
+            ge: [1, 11],
+         },
+      }
+      return jsons[0]
+   },
+}

@@ -1,0 +1,29 @@
+{
+  "coletas": [
+    {
+      "agente": 3,
+      "clientes": [
+        {
+          "id": 1,
+          "nome": "Albert"
+        },
+        {
+          "id": 2,
+          "nome": "Jao"
+        },
+        {
+          "id": 3,
+          "nome": "Pedro"
+        },
+        {
+          "id": 4,
+          "nome": "José"
+        },
+        {
+          "id": 5,
+          "nome": "Maria"
+        }
+      ]
+    }
+  ]
+}

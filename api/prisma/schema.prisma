@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  id            Int     @id @default(autoincrement())
+  username      String
+  token         String  @unique @default(uuid())
+  atk           String  @unique @default(uuid())
+  saldo         Float   @default(0)
+  valorapostado Float   @default(0)
+  valordebitado Float   @default(0)
+  valorganho    Float   @default(0)
+  rtp           Float   @default(0)
+  is_influencer Boolean @default(false)
+  agentid       Int
+}
+
+model agents {
+  id                  Int    @id @default(autoincrement())
+  agentcode           String
+  saldo               String
+  senha               String
+  agentToken          String @unique @default(uuid())
+  secretKey           String @unique @default(uuid())
+  probganho           String
+  probbonus           String
+  probganhortp        String
+  probganhoinfluencer String
+  probbonusinfluencer String
+  probganhoaposta     String
+  probganhosaldo      String
+  limitadorchicky     Int    @default(5)
+  callbackurl         String
+}
+
+model calls {
+  id       Int    @id @default(autoincrement())
+  iduser   Int
+  gamecode String
+  jsonname String
+  steps    Int?
+  bycall   String
+  aw       Float
+  status   String
+}
+
+model jsons {
+  id       Int    @id @default(autoincrement())
+  userid   Int
+  gamename String
+  json     Json
+}

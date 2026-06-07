@@ -1,0 +1,44 @@
+[
+  {
+    "agente": 3,
+    "clientes": {
+      "id": "5",
+      "nome": "Unica Manuseio"
+    }
+  },
+  {
+    "agente": 3,
+    "clientes": {
+      "id": "3",
+      "nome": "Fantasia Comercio"
+    }
+  },
+  {
+    "agente": 3,
+    "clientes": {
+      "id": "6",
+      "nome": "print rv"
+    }
+  },
+  {
+    "agente": 3,
+    "clientes": {
+      "id": "2",
+      "nome": "Mercado Livre"
+    }
+  },
+  {
+    "agente": 3,
+    "clientes": {
+      "id": "1",
+      "nome": "Primes Log"
+    }
+  },
+  {
+    "agente": 3,
+    "clientes": {
+      "id": "7",
+      "nome": "JEFFERSON NATAL   ( B&A"
+    }
+  }
+]
